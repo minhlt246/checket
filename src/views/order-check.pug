@@ -1,0 +1,99 @@
+extends _layouts/master-vp
+
+block content
+    section.px-3
+        .head-title.p-3.mt-lg-3.mb-4.head-bg
+            .text-border.ps-3
+                .fs-4.text-uppercase.fw-bold.py-3 ORDER CHECKOUT
+        .container.pb-4.px-0
+            .row
+                .col-lg-6.mb-4
+                    .border.py-3.rounded-3.h-100
+                        .row.py-2.border-bottom.mx-0
+                            .col-4
+                                | Product Type
+                            .col-8
+                                | Standard Challenge OnePhase
+                        .row.py-2.border-bottom.mx-0
+                            .col-4
+                                | Account Size
+                            .col-8
+                                | $100.000
+                        .row.py-2.border-bottom.mx-0
+                            .col-4
+                                | Platform
+                            .col-8
+                                | MT4
+                        .row.py-2.border-bottom.mx-0
+                            .col-4
+                                | Add-ons
+                            .col-8
+                                | EAs/Trade Copiers Enabled
+                        .row.py-2.border-bottom.mx-0
+                            .col-4
+                                | Subtotal
+                            .col-8
+                                | $500.00
+                        .row.py-2.border-bottom.mx-0.mb-4
+                            .col-4
+                                | Discount
+                            .col-8
+                                | - $0.00
+                        .py-3
+                            .total-row.row.mx-0
+                                .col-4
+                                    | Subtotal
+                                .col-8
+                                    | $500.00
+                .col-lg-6.mb-4
+                    .border.p-3.rounded-3.h-100
+                        .d-flex.align-items-center.mb-3
+                            .flex-shrink-1
+                                img(src='client/images/usdt.png' style='height: 50px')
+                            .w-100.px-3
+                                | Mig-payments: Tether USDT in TRC-20 ONLY
+                        .form-check
+                            .d-flex.align-items-center.py-2
+                                .flex-shrink-1
+                                    input#term1.form-check-input(type='checkbox' value='')
+                                .w-100.px-3
+                                    label.form-check-label(for='term1')
+                                        | I have read and agree to the website terms and conditions
+                            .d-flex.align-items-center.py-2
+                                .flex-shrink-1
+                                    input#term2.form-check-input(type='checkbox' value='')
+                                .w-100.px-3
+                                    label.form-check-label(for='term2')
+                                        | I have read and agree to the website refund and dispute policy
+                            .d-flex.align-items-center.py-2
+                                .flex-shrink-1
+                                    input#term3.form-check-input(type='checkbox' value='')
+                                .w-100.px-3
+                                    label.form-check-label(for='term3')
+                                        | I have read and agree to the website privacy policy
+                            .d-flex.align-items-center.py-2
+                                .flex-shrink-1
+                                    input#term4.form-check-input(type='checkbox' value='')
+                                .w-100.px-3
+                                    label.form-check-label(for='term4')
+                                        | Subscribe to our newsletter to receive important updates and exclusive promotions(optional)
+                .col-lg-5.mx-auto.py-3
+                    button.btn.btn-start.w-100.hvr-float-shadow.rounded-3.btn-lg(type='button') PROCESS WITH MIG-PAYMENTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+header.fixed-top
+    nav.navbar.navbar-expand-lg
+        .container-fluid
+            a.navbar-brand(href='index.html')
+                img.img-logo(src='client/images/logo.png')
+            button.navbar-toggler.border-0(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #offcanvasNavbar.offcanvas.offcanvas-start(tabindex='0' aria-labelledby='offcanvasNavbarLabel')
+                .offcanvas-header
+                    h5.offcanvas-title
+                        img.img-logo(src='client/images/logo.png')
+                    button.btn.p-0.border-0(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+                        i.fa-solid.fa-times.text-white.fa-2x
+                .offcanvas-body
+                    ul#menu-scroll.navbar-nav.justify-content-end.flex-grow-1.pe-3
+                        li.nav-item.mx-lg-3
+                            a.nav-link.active(href='index.html#home') Home
+                        li.nav-item.mx-lg-3(data-bs-dismiss='offcanvas')
+                            a.nav-link(href='index.html#evaluation') Evaluation
+                        li.nav-item.mx-lg-3(data-bs-dismiss='offcanvas')
+                            a.nav-link(href='index.html#challenge') Challenge
+                        li.nav-item.mx-lg-3(data-bs-dismiss='offcanvas')
+                            a.nav-link(href='index.html#faq') FAQ
+                        li.nav-item.dropdown.mx-lg-3
+                            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | Page
+                            ul.dropdown-menu.dropdown-menu-end
+                                li
+                                    a.dropdown-item(href='blog.html') Blog
+                                li
+                                    a.dropdown-item(href='faq.html') FAQ
+                                li
+                                    a.dropdown-item(href='javascript:void(0)') Affiliate Program
+                                li
+                                    a.dropdown-item(href='contact-us.html') Contact us
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | Client Area
+                            ul.dropdown-menu.dropdown-menu-end
+                                li
+                                    a.dropdown-item(href='login.html') Login
+                                li
+                                    a.dropdown-item(href='register.html') Register
+

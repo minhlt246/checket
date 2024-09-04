@@ -1,0 +1,37 @@
+extends _layouts/master
+
+block content
+    section
+        .contact-us
+            .contact-us-content.d-flex.align-items-center
+                .contact-title.w-100.text-center
+                    h3.text-white.fw-bold
+                        span.text-primary Home
+                        span.mx-2 /
+                        span.text-highline Contact Us
+            .contact-form
+                .container
+                    .row
+                        .col-lg-6.py-4
+                            form.form-contact
+                                .login-title-header
+                                    h1.fs-4.py-3 Sent us an Email
+                                .form-input.p-5
+                                    .input-group.mb-3
+                                        input.form-control(type='text' placeholder='Name' aria-label='Name' required='')
+                                    .input-group.mb-3
+                                        input.form-control(type='text' placeholder='Mail' aria-label='Mail' required='')
+                                    .input-group.mb-5
+                                        input.form-control(type='text' placeholder='Phone' aria-label='Phone' required='')
+                                    .input-group.mb-3
+                                        textarea#exampleFormControlTextarea1.form-control(style='height:200px' placeholder='Message')
+                                    button.btn.btn-start.mt-4.px-4(type='submit')
+                                        |  Submit
+
+                        .col-lg-6.pt-4
+                            .d-flex.align-items-center.h-100
+                                .contact-button.w-100
+                                    .row
+                                        .col-md-6.mx-auto
+                                            button.btn.btn-primary.w-100.mb-3(type='button') Mail@support.cic.com
+                                            button.btn.btn-primary.w-100.mb-3(type='button') 888-787-986

@@ -1,0 +1,152 @@
+extends _layouts/master-vp
+
+block content
+    section.px-3
+        .head-title.p-3.mt-lg-3.mb-4.head-bg
+            .text-border.ps-3
+                .fs-4.text-uppercase.fw-bold CHOOSE YOUR FUNDED TRADER CHALLENGE
+                .m-0 Select the challenge type and account size of your challenge.
+        .container.pb-4.px-0
+            .row
+                .col-lg-8
+                    .card.mb-4
+                        .card-body
+                            .fw-bold.my-3 Type of Account
+                            .row
+                                .d-flex.justify-content-between.px-0
+                                    input#option1.btn-check(type='radio' name='challenge' autocomplete='off' checked='')
+                                    label.btn.btn-primary.flex-fill.mx-1.mx-lg-3(for='option1')
+                                        span.d-none.d-lg-inline One Phase
+                                        span.d-lg-none 1 Phase
+                                    input#option2.btn-check(type='radio' name='challenge' autocomplete='off')
+                                    label.btn.btn-primary.flex-fill.mx-1.mx-lg-3(for='option2')
+                                        span.d-none.d-lg-inline Two Phase
+                                        span.d-lg-none 2 Phase
+                                    input#option3.btn-check(type='radio' name='challenge' autocomplete='off')
+                                    label.btn.btn-primary.flex-fill.mx-1.mx-lg-3(for='option3')
+                                        span.d-none.d-lg-inline Three Phase
+                                        span.d-lg-none 3 Phase
+                            .fw-bold.my-3 Type of Account
+                            .row.justify-content-center.row-cols-2.row-cols-md-4
+                                .px-2.mb-3
+                                    input#size1.btn-check(type='radio' name='account' autocomplete='off' checked='')
+                                    label.btn.btn-start.w-100(for='size1') $5.000
+                                .px-2.mb-3
+                                    input#size2.btn-check(type='radio' name='account' autocomplete='off')
+                                    label.btn.btn-start.w-100(for='size2') $10.000
+                                .px-2.mb-3
+                                    input#size3.btn-check(type='radio' name='account' autocomplete='off')
+                                    label.btn.btn-start.w-100(for='size3') $20.000
+                                .px-2.mb-3
+                                    input#size4.btn-check(type='radio' name='account' autocomplete='off')
+                                    label.btn.btn-start.w-100(for='size4') $50.000
+                                .px-2.mb-3
+                                    input#size5.btn-check(type='radio' name='account' autocomplete='off')
+                                    label.btn.btn-start.w-100(for='size5') $100.000
+                                .px-2.mb-3
+                                    input#size6.btn-check(type='radio' name='account' autocomplete='off')
+                                    label.btn.btn-start.w-100(for='size6') $200.000
+                                .px-2.mb-3
+                                    input#size7.btn-check(type='radio' name='account' autocomplete='off')
+                                    label.btn.btn-start.w-100(for='size7') $250.000
+                                .px-2.mb-3
+                                    input#size8.btn-check(type='radio' name='account' autocomplete='off')
+                                    label.btn.btn-start.w-100(for='size8') $300.000
+
+                            .fw-bold.my-3 Platform
+                            .row.mb-3
+                                .d-flex.justify-content-between.px-0
+                                    input#mt4.btn-check(type='radio' name='mt' autocomplete='off' checked='')
+                                    label.btn.btn-primary.flex-fill.mx-1.mx-lg-3(for='mt4')
+                                        | MT4
+                                    input#mt5.btn-check(type='radio' name='mt' autocomplete='off')
+                                    label.btn.btn-primary.flex-fill.mx-1.mx-lg-3(for='mt5')
+                                        | MT5
+                    .card.mb-4
+                        .card-body
+                            .fw-bold.py-1.border-bottom.mb-3 Billing Information
+                            .row.justify-content-lg-between
+                                .col-md-6.col-lg-5
+                                    .mb-3
+                                        label.form-label.fw-light First Name
+                                        .input-group
+                                            input.form-control.rounded-3(type='text')
+                                .col-md-6.col-lg-5
+                                    .mb-3
+                                        label.form-label.fw-light Last Name
+                                        .input-group
+                                            input.form-control.rounded-3(type='text')
+                                .col-md-6.col-lg-5
+                                    .mb-3
+                                        label.form-label.fw-light Email
+                                        .input-group
+                                            input.form-control.rounded-3(type='text')
+                                .col-md-6.col-lg-5
+                                    .mb-3
+                                        label.form-label.fw-light Phone
+                                        .input-group
+                                            input.form-control.rounded-3(type='text')
+                                .col-md-6.col-lg-5
+                                    .mb-3
+                                        label.form-label.fw-light Address
+                                        .input-group
+                                            input.form-control.rounded-3(type='text')
+                                .col-md-6.col-lg-5
+                                    .mb-3
+                                        label.form-label.fw-light Town/City
+                                        .input-group
+                                            input.form-control.rounded-3(type='text')
+                                .col-md-6.col-lg-5
+                                    .mb-3
+                                        label.form-label.fw-light Country
+                                        select.form-select.rounded-3(aria-label='Default select example')
+                                            option(selected='') Country
+                                            option(value='1') One
+                                            option(value='2') Two
+                                            option(value='3') Three
+                                .col-md-6.col-lg-5
+                                    .mb-3
+                                        label.form-label.fw-light State
+                                        .input-group
+                                            input.form-control.rounded-3(type='text')
+
+                .col-lg-4
+                    .sticky-lg-top
+                        .card.mb-4
+                            .card-body
+                                .d-flex.justify-content-center.mb-3
+                                    .px-4.pb-1.fw-bold.border-bottom Order Summary
+                                .row.py-1.border-bottom
+                                    .col-6 Type of Account
+                                    .col-6 OnePhase
+                                .row.py-1.border-bottom
+                                    .col-6 Account Size
+                                    .col-6 $100.000
+                                .row.py-1.border-bottom.mb-3
+                                    .col-6 Platform
+                                    .col-6 MT4
+                                .mb-3
+                                    label.form-label.fw-light Affiliate Code
+                                    .input-group
+                                        input.form-control.rounded-3(type='text')
+                                .text-dark.text-center.bg-secondary-subtle.rounded-3.py-1 $500.00
+                                .pt-3
+                                    a(href='order-confirm.html').btn.btn-start.hvr-float.w-100 Complete Order
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

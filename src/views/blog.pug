@@ -1,0 +1,150 @@
+extends _layouts/master
+
+block content
+    section
+        .blog
+            .header-content
+                .contact-title.w-100.text-center
+                    h3.text-white.fw-bold
+                        span.text-primary Home
+                        span.mx-2 /
+                        span.text-highline Blog
+            .container
+                ul.nav.nav-pills.my-4.justify-content-between.blog-tags(role='tablist')
+                    li.nav-item(role='presentation')
+                        button.nav-link.active(data-bs-toggle='pill' data-bs-target='#home' type='button' role='tab' aria-controls='pills-home' aria-selected='true')
+                            | Company Update
+                    li.nav-item(role='presentation')
+                        button.nav-link(data-bs-toggle='pill' data-bs-target='#trade' type='button' role='tab' aria-controls='pills-profile' aria-selected='false')
+                            | Trading Articles
+                .tab-content
+                    #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
+                        .row
+                            - for (var i = 0; i < 3; i++)
+                                .col-md-6.col-lg-4.py-2
+                                    .blog-colums.blog-banner.mb-4
+                                        .blog-images
+                                            a( href='#' title='Spell token: Price, Market cap and other info| TheTopCoins')
+                                                img.blog-images-top(src="client/images/new-1.png")
+                                        .blog-information
+                                            p.fs-3.blog-text.m-0
+                                                a.blog-title.text-highline(href='') What is Expert Advisor in Forex..
+                                            a.fs-6(href='') David Dombrowsky
+                                            p.fs-6.m-0.text-dark.text-start
+                                                | What is a scalping trade strategy.
+                                                | What is the best option scalping
+                                                | strategy in forex trading? Read
+                                                | more about the most profitable
+                                                | scalping trading strategies for
+                                            .pt-3
+                                                a(href='javascript:void(0)').btn.btn-start.hvr-float-shadow Read More
+
+                                .col-md-6.col-lg-4.py-2
+                                    .blog-colums.blog-banner.mb-4
+                                        .blog-images
+                                            a( href='' title='Spell token: Price, Market cap and other info| TheTopCoins')
+                                                img.blog-images-top(src="client/images/new-2.png")
+                                        .blog-information
+                                            p.fs-3.blog-text.m-0
+                                                a.blog-title.text-highline(href='') What is Expert Advisor in Forex..
+                                            a.fs-6(href='') David Dombrowsky
+                                            p.fs-6.m-0.text-dark.text-start
+                                                | What is a scalping trade strategy.
+                                                | What is the best option scalping
+                                                | strategy in forex trading? Read
+                                                | more about the most profitable
+                                                | scalping trading strategies for
+                                            .pt-3
+                                                a(href='javascript:void(0)').btn.btn-start.hvr-float-shadow Read More
+
+                                .col-md-6.col-lg-4.py-2
+                                    .blog-colums.blog-banner.mb-4
+                                        .blog-images
+
+                                            a( href='' title='Spell token: Price, Market cap and other info| TheTopCoins')
+                                                img.blog-images-top(src="client/images/new-3.png")
+
+                                        .blog-information
+                                            p.fs-3.blog-text.m-0
+                                                a.blog-title.text-highline(href='') What is Expert Advisor in Forex..
+                                            a.fs-6(href='') David Dombrowsky
+                                            p.fs-6.m-0.text-dark.text-start
+                                                | What is a scalping trade strategy.
+                                                | What is the best option scalping
+                                                | strategy in forex trading? Read
+                                                | more about the most profitable
+                                                | scalping trading strategies for
+                                            .pt-3
+                                                a(href='javascript:void(0)').btn.btn-start.hvr-float-shadow Read More
+
+                        .d-flex.justify-content-center.py-3
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float << Previous
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float.text-highline 1
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float 2
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float 3
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float Next >>
+                    #trade.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='0')
+                        .row
+                            - for (var i = 0; i < 3; i++)
+                                .col-md-6.col-lg-4.py-2
+                                    .blog-colums.blog-banner.mb-4
+                                        .blog-images
+                                            a( href='' title='Spell token: Price, Market cap and other info| TheTopCoins')
+                                                img.blog-images-top(src="client/images/new-1.png")
+                                        .blog-information
+                                            p.fs-3.blog-text.m-0
+                                                a.blog-title.text-highline(href='') What is Expert Advisor in Forex..
+                                            a.fs-6(href='') David Dombrowsky
+                                            p.fs-6.m-0.text-dark.text-start
+                                                | What is a scalping trade strategy.
+                                                | What is the best option scalping
+                                                | strategy in forex trading? Read
+                                                | more about the most profitable
+                                                | scalping trading strategies for
+                                            .pt-3
+                                                a(href='javascript:void(0)').btn.btn-start.hvr-float-shadow Read More
+
+                                .col-md-6.col-lg-4.py-2
+                                    .blog-colums.blog-banner.mb-4
+                                        .blog-images
+                                            a( href='' title='Spell token: Price, Market cap and other info| TheTopCoins')
+                                                img.blog-images-top(src="client/images/new-2.png")
+                                        .blog-information
+                                            p.fs-3.blog-text.m-0
+                                                a.blog-title.text-highline(href='') What is Expert Advisor in Forex..
+                                            a.fs-6(href='') David Dombrowsky
+                                            p.fs-6.m-0.text-dark.text-start
+                                                | What is a scalping trade strategy.
+                                                | What is the best option scalping
+                                                | strategy in forex trading? Read
+                                                | more about the most profitable
+                                                | scalping trading strategies for
+                                            .pt-3
+                                                a(href='javascript:void(0)').btn.btn-start.hvr-float-shadow Read More
+
+                                .col-md-6.col-lg-4.py-2
+                                    .blog-colums.blog-banner.mb-4
+                                        .blog-images
+
+                                            a( href='' title='Spell token: Price, Market cap and other info| TheTopCoins')
+                                                img.blog-images-top(src="client/images/new-3.png")
+
+                                        .blog-information
+                                            p.fs-3.blog-text.m-0
+                                                a.blog-title.text-highline(href='') What is Expert Advisor in Forex..
+                                            a.fs-6(href='') David Dombrowsky
+                                            p.fs-6.m-0.text-dark.text-start
+                                                | What is a scalping trade strategy.
+                                                | What is the best option scalping
+                                                | strategy in forex trading? Read
+                                                | more about the most profitable
+                                                | scalping trading strategies for
+                                            .pt-3
+                                                a(href='javascript:void(0)').btn.btn-start.hvr-float-shadow Read More
+
+                        .d-flex.justify-content-center.py-3
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float << Previous
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float.text-highline 1
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float 2
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float 3
+                            a(href='javascript:void(0)').text-primary.mx-2.hvr-float Next >>
