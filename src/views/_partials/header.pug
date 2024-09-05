@@ -1,44 +1,71 @@
-header.fixed-top
-    nav.navbar.navbar-expand-lg
-        .container-fluid
-            a.navbar-brand(href='index.html')
-                img.img-logo(src='client/images/logo.png')
-            button.navbar-toggler.border-0(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation')
-                span.navbar-toggler-icon
-            #offcanvasNavbar.offcanvas.offcanvas-start(tabindex='0' aria-labelledby='offcanvasNavbarLabel')
+header
+    nav.navbar.navbar-expand-lg.fixed-top.menu.py-0.py-lg-1
+        .container
+            a.navbar-brand(href='')
+                img.img-logo.d-none.d-lg-block(src='client/images/logo-text.png')
+                img.img-logo-short.d-lg-none(src='client/images/logo.png')
+            #offcanvasNavbar.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
                 .offcanvas-header
-                    h5.offcanvas-title
-                        img.img-logo(src='client/images/logo.png')
-                    button.btn.p-0.border-0(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
-                        i.fa-solid.fa-times.text-white.fa-2x
+                    .offcanvas-title
+                        img.img-logo-short(src='client/images/logo.png')
+                    button.btn.pe-0.border-0.text-white(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+                        i.fas.fa-times.fa-2x
                 .offcanvas-body
-                    ul#menu-scroll.navbar-nav.justify-content-end.flex-grow-1.pe-3
-                        li.nav-item.mx-lg-3
-                            a.nav-link.active(href='index.html#home') Home
-                        li.nav-item.mx-lg-3(data-bs-dismiss='offcanvas')
-                            a.nav-link(href='index.html#evaluation') Evaluation
-                        li.nav-item.mx-lg-3(data-bs-dismiss='offcanvas')
-                            a.nav-link(href='index.html#challenge') Challenge
-                        li.nav-item.mx-lg-3(data-bs-dismiss='offcanvas')
-                            a.nav-link(href='index.html#faq') FAQ
-                        li.nav-item.dropdown.mx-lg-3
-                            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-                                | Page
-                            ul.dropdown-menu.dropdown-menu-end
-                                li
-                                    a.dropdown-item(href='blog.html') Blog
-                                li
-                                    a.dropdown-item(href='faq.html') FAQ
-                                li
-                                    a.dropdown-item(href='javascript:void(0)') Affiliate Program
-                                li
-                                    a.dropdown-item(href='contact-us.html') Contact us
+                    ul.navbar-nav.justify-content-end.flex-grow-1.pe-lg-3
+                        li.nav-item
+                            a.nav-link.mb-3.mb-lg-0.me-lg-3(aria-current='page' href='') Trang Chủ
+                        li.nav-item
+                            a.nav-link.mb-3.mb-lg-0.me-lg-3(href='') Về Chúng Tôi
                         li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-                                | Client Area
+                            a.nav-link.mb-3.mb-lg-0.me-lg-3.dropdown-toggle(href='javascript:void(0)' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | Dịch Vụ
                             ul.dropdown-menu.dropdown-menu-end
                                 li
-                                    a.dropdown-item(href='login.html') Login
+                                    a.dropdown-item.py-3(href='') Advertising
                                 li
-                                    a.dropdown-item(href='register.html') Register
+                                    a.dropdown-item.py-3(href='') Event
+                                li
+                                    a.dropdown-item.py-3(href='') PR - MEDIA
+                        li.nav-item.dropdown
+                            a.nav-link.mb-3.mb-lg-0.me-lg-3.dropdown-toggle(href='javascript:void(0)' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | Dự Án
+                            ul.dropdown-menu.dropdown-menu-end
+                                li
+                                    a.dropdown-item.py-3(href='') Building Materials
+                                li
+                                    a.dropdown-item.py-3(href='') Travel
+                                li
+                                    a.dropdown-item.py-3(href='') Electrical Equipment
+                                li
+                                    a.dropdown-item.py-3(href='') Real
+                                li
+                                    a.dropdown-item.py-3(href='') Energy
+                        li.nav-item
+                            a.nav-link.mb-3.mb-lg-0.me-lg-3(href='') Tin Tức
+                        li.nav-item
+                            a.nav-link.mb-3.mb-lg-0(href='') Liên Hệ
 
+            .d-flex.ms-auto
+                .dropdown.me-2
+                    a.btn.btn-language.dropdown-toggle(href='javascript:void(0)' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                        | En
+                    ul.dropdown-menu.dropdown-menu-end(style='min-width:100%')
+                        li
+                            a.dropdown-item(href='javascript:void(0)') CN
+                        li
+                            a.dropdown-item(href='javascript:void(0)') VN
+                        li
+                            a.dropdown-item(href='javascript:void(0)') ZH
+                .dropdown
+                    a.btn.border-0.text-white(href='javascript:void(0)' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                        i.fas.fa-search
+                    ul.dropdown-menu.dropdown-menu-end.search-bar
+                        li
+                            .input-group.px-2
+                                input.form-control.text-dark(type='text' placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby='basic-addon2')
+                                span.input-group-text.bg-transparent.p-0
+                                    button.btn(type='submit') Search
+
+
+            button.navbar-toggler.border-0.text-white.pe-0(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation')
+                i.fas.fa-bars.fa-2x
