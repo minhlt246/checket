@@ -2,8 +2,7 @@ header
     nav.navbar.navbar-expand-lg.fixed-top.menu.py-0.py-lg-1
         .container
             a.navbar-brand(href='')
-                img.img-logo.d-none.d-lg-block(src='client/images/logo-text.png')
-                img.img-logo-short.d-lg-none(src='client/images/logo.png')
+
             #offcanvasNavbar.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
                 .offcanvas-header
                     .offcanvas-title
@@ -11,21 +10,75 @@ header
                     button.btn.pe-0.border-0.text-white(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
                         i.fas.fa-times.fa-2x
                 .offcanvas-body
-                    ul.navbar-nav.justify-content-end.flex-grow-1.pe-lg-3
+                    ul.navbar-nav.justify-content-center.flex-grow-1.pe-lg-3
                         li.nav-item
                             a.nav-link.mb-3.mb-lg-0.me-lg-3(aria-current='page' href='') Trang Chủ
                         li.nav-item
-                            a.nav-link.mb-3.mb-lg-0.me-lg-3(href='') Về Chúng Tôi
+                            a.nav-link.mb-3.mb-lg-0.me-lg-3(href='') GIỚI THIỆU
                         li.nav-item.dropdown
                             a.nav-link.mb-3.mb-lg-0.me-lg-3.dropdown-toggle(href='javascript:void(0)' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-                                | Dịch Vụ
+                                | SẢN PHẨM
                             ul.dropdown-menu.dropdown-menu-end
-                                li
-                                    a.dropdown-item.py-3(href='') Advertising
-                                li
-                                    a.dropdown-item.py-3(href='') Event
-                                li
-                                    a.dropdown-item.py-3(href='') PR - MEDIA
+                                li.submenu__col
+                                    span.submenu__item.submenu__item--main
+                                        a.dropdown-item( title='Dưỡng Da') Dưỡng Da
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Kem Dưỡng Ẩm') Kem Dưỡng Ẩm
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Kem Chống Lão Hóa') Kem Chống Lão Hóa
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Kem Dưỡng Da Ban Ngày') Kem Dưỡng Da Ban Ngày
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Kem Dưỡng Da Ban Đêm') Kem Dưỡng Da Ban Đêm
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Kem Dưỡng Trắng Da') Kem Dưỡng Trắng Da
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Kem Chống Nắng') Kem Chống Nắng
+                                li.submenu__col
+                                    span.submenu__item.submenu__item--main
+                                        a.dropdown-item( title='Trang Điểm') Trang Điểm
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Kem Lót') Kem L&oacute;t
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Phấn Nền') Ph&#x1EA5;n N&#x1EC1;n
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Phấn Phủ') Ph&#x1EA5;n Ph&#x1EE7;
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Má Hồng') M&aacute; H&#x1ED3;ng
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Phấn Mắt') Ph&#x1EA5;n M&#x1EAF;t
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Che Khuyết Điểm') Che Khuy&#x1EBF;t &Dstrok;i&#x1EC3;m
+                                li.submenu__col
+                                    span.submenu__item.submenu__item--main
+                                        a.dropdown-item(title='Tẩy Trang') T&#x1EA9;y Trang
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Sữa Tẩy Trang') S&#x1EEF;a T&#x1EA9;y Trang
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Dầu Tẩy Trang') D&#x1EA7;u T&#x1EA9;y Trang
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item(title='Nước Tẩy Trang') N&#x1B0;&#x1EDB;c T&#x1EA9;y Trang
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item(title='Gel Tẩy Trang') Gel T&#x1EA9;y Trang
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item(title='Balm Tẩy Trang') Balm T&#x1EA9;y Trang
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item(title='Bông Tẩy Trang') B&ocirc;ng T&#x1EA9;y Trang
+                                li.submenu__col
+                                    span.submenu__item.submenu__item--main
+                                        a.dropdown-item(title='Mặt Nạ') M&#x1EB7;t N&#x1EA1;
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Mặt Nạ Dưỡng Ẩm') M&#x1EB7;t N&#x1EA1; D&#x1B0;&#x1EE1;ng &#x1EA8;m
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Mặt Nạ Tái Tạo') M&#x1EB7;t N&#x1EA1; T&aacute;i T&#x1EA1;o
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Mặt Nạ Dưỡng Trắng') M&#x1EB7;t N&#x1EA1; D&#x1B0;&#x1EE1;ng Tr&#x1EAF;ng
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Mặt Nạ Chống Lão Hóa') M&#x1EB7;t N&#x1EA1; Ch&#x1ED1;ng L&atilde;o H&oacute;a
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Mặt Nạ Cho Da Mụn') M&#x1EB7;t N&#x1EA1; Cho Da M&#x1EE5;n
+                                    span.submenu__item.submenu__item
+                                        a.dropdown-item( title='Mặt Nạ Làm Dịu Da') M&#x1EB7;t N&#x1EA1; L&agrave;m D&#x1ECB;u Da
                         li.nav-item.dropdown
                             a.nav-link.mb-3.mb-lg-0.me-lg-3.dropdown-toggle(href='javascript:void(0)' role='button' data-bs-toggle='dropdown' aria-expanded='false')
                                 | Dự Án
