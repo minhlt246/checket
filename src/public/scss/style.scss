@@ -346,6 +346,7 @@ header{
 
   }
 }
+
 .input-group{
   .form-control{
     background: transparent;
@@ -355,6 +356,9 @@ header{
       color: $color-1;
     }
   }
+}
+.page-header{
+  background-image: url("client/images/backgroud.webp");
 }
 section{
 
