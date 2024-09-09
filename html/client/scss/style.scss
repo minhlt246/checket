@@ -174,7 +174,7 @@ body {
   width: 45px;
 }
 .navbar{
-  --bs-navbar-active-color: #999999;
+  background: #ffffff;
   .nav-item {
     .nav-link {
       color: #000000;
@@ -188,7 +188,7 @@ body {
 
     }
     .active{
-      background-image: linear-gradient(310deg, #cb0c9f, #cb0c9f);
+      background:#FF99CC;
 
     }
   }
@@ -231,7 +231,7 @@ body {
     border: none;
     outline: none;
     left: 0px;
-    background: url(../images/arrow-left.png) no-repeat center center;
+
     background-size: 100% 100%;
     transform: translateY(-40%);
     z-index: 9;
@@ -262,7 +262,7 @@ body {
     border: none;
     outline: none;
     right: 0px;
-    background: url(../images/arrow-right.png) no-repeat center center;
+
     background-size: 100% 100%;
     transform: translateY(-40%);
     &:focus {
@@ -346,6 +346,7 @@ header{
 
   }
 }
+
 .input-group{
   .form-control{
     background: transparent;
@@ -355,6 +356,9 @@ header{
       color: $color-1;
     }
   }
+}
+.page-header{
+
 }
 section{
 
