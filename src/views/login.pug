@@ -17,6 +17,16 @@ html
         link(rel='stylesheet' href='client/slick/slick.css')
         link(rel='stylesheet' href='client/fonts/fontstyle.css')
         .container
-            .row
-                p minh
-
+            .form-box
+                form.form
+                    span.title Sign up
+                    span.subtitle Create a free account with your email.
+                    .form-container
+                        input.input(type='text' placeholder='Full Name')
+                        input.input(type='email' placeholder='Email')
+                        input.input(type='password' placeholder='Password')
+                    button Sign up
+                .form-section
+                    p
+                        | Have an account?
+                        a(href='') Log in
